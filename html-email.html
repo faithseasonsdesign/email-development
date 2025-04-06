@@ -37,6 +37,12 @@
             text-align: center;
             float: left;
         }
+        .two-column{
+            width: 46%;
+            padding: 0 2%;
+            float: left;
+            padding-bottom: 50px;
+        }
         .three-columns img{width: 135px;}
         h2{
             font-weight: 600;
@@ -48,11 +54,26 @@
             text-decoration: none;
             padding: 10px 14px;
         }
+        ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        ul li{display: inline;}
+        ul li img{max-width: 10%;}
+
+
+        @media screen and (max-width:567px){
+            .three-columns,.two-column{
+                width: 96%;
+            }
+        }
+
     </style>
 
     <h1>Wrapper div is always required low-key</h1>
     <h2>max-width:600px</h2>
     <h2>margin : <span>0[vertically] auto[horizontally=>center]</span></h2>
+    <h2>margin : <span>horizontal spacing should be PX</span></h2>
     <h2>box shadow : box-shadow : <span>vertical horizonal blurAmount color</span></h2>
     <h2>border-radius : <span>topR(val) topL(val) botR(val) botL(val)</span></h2>
     
@@ -104,6 +125,49 @@
                 </a>
             </div>
         </div>
+        <!---two columns start here-->
+        <!-- <div>
+            <div class="two-column">
+                <a href="http://" title="first image">
+                    <img src="https://mcusercontent.com/cadd614b6565c95f5798597db/images/448c65c7-7893-5d17-2f09-0fa1131739d7.jpg" alt="first image" title="first image">
+                </a>
+    
+            </div>
+            <div class="two-column">
+                <h1>HTML Course</h1>
+                <p>Learning Html Course basically for cooler things</p>
+                <div class="button-holder">
+                    <a href="http://" title="learn more now" target="_blank" class="btn">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div> -->
+        <!---two columns ended here-->
+        <!--footer section start here-->
+        <ul>
+            <li>
+                <a href="http://" target="_blank" title="go to our youtube channel">
+                    <img src="https://mcusercontent.com/cadd614b6565c95f5798597db/images/e38dd62f-dcad-2f9f-162b-364fe4d21ee9.png" alt="youtube image" title="go to our youtube channel">
+                </a>
+            </li>
+            <li>
+                <a href="http://" target="_blank" title="go to our twitter channel">
+                    <img src="https://mcusercontent.com/cadd614b6565c95f5798597db/images/16dde8c8-714c-151d-fb64-676ba57140ed.png" alt="twitter image" title="go to our twitter channel">
+                </a>
+            </li>
+            <li>
+                <a href="http://" target="_blank" title="go to our twitter channel">
+                    <img src="https://mcusercontent.com/cadd614b6565c95f5798597db/images/88771d04-27b2-0843-f830-6e28736de311.png" alt="facebook image" title="go to our facebook channel">
+                </a>
+            </li>
+            <li>
+                <a href="http://" target="_blank" title="go to our twitter channel">
+                    <img src="https://mcusercontent.com/cadd614b6565c95f5798597db/images/ec998e06-a59d-ea19-b9bf-5ba422d7fd9e.png" alt="linkedin image" title="go to our linkedin channel">
+                </a>
+            </li>
+        </ul>
+        <!--footer section ended here-->
     </div>
     <!--THE EMAIL CONTENT ENDED HERE-->
 
